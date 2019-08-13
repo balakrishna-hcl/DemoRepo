@@ -39,11 +39,7 @@ class NumberWordConverter {
 		if (n < 1_000_000) {
 			return convert(n / 1000) + " thousand" + ((n % 1000 != 0) ? " and " : "") + convert(n % 1000);
 		}
-		if (n < 1_000_000_000) {
 			return convert(n / 1_000_000) + " million" + ((n % 1_000_000 != 0) ? " and " : "") + convert(n % 1_000_000);
-		}
-		return convert(n / 1_000_000_000) + " billion" + ((n % 1_000_000_000 != 0) ? " and " : "")
-				+ convert(n % 1_000_000_000);
 	}
 
 }
